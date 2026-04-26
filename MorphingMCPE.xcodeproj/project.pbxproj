@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		218941D547EC8B7FCBB33EB7 /* Pods_MorphingMCPE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC6C3330D63351F77AB2FEA /* Pods_MorphingMCPE.framework */; };
 		EA4055AE2F9E048D00A00846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055AD2F9E048D00A00846 /* AppDelegate.swift */; };
-		EA4055B02F9E048D00A00846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055AF2F9E048D00A00846 /* SceneDelegate.swift */; };
-		EA4055B22F9E048D00A00846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055B12F9E048D00A00846 /* ViewController.swift */; };
 		EA4055B52F9E048D00A00846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4055B32F9E048D00A00846 /* Main.storyboard */; };
 		EA4055B72F9E049000A00846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4055B62F9E049000A00846 /* Assets.xcassets */; };
 		EA4055BA2F9E049000A00846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4055B82F9E049000A00846 /* LaunchScreen.storyboard */; };
@@ -21,6 +19,61 @@
 		EA4055ED2F9E07D200A00846 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E62F9E07D200A00846 /* Skin.swift */; };
 		EA4055EE2F9E07D200A00846 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E72F9E07D200A00846 /* AppViewModel.swift */; };
 		EA4055EF2F9E07D200A00846 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E82F9E07D200A00846 /* StoreViewModel.swift */; };
+		EA4055F22F9E0E1F00A00846 /* 3D in Resources */ = {isa = PBXBuildFile; fileRef = EA4055F02F9E0E1F00A00846 /* 3D */; };
+		EA4055F32F9E0E1F00A00846 /* cape in Resources */ = {isa = PBXBuildFile; fileRef = EA4055F12F9E0E1F00A00846 /* cape */; };
+		EA4055FD2F9E0E2800A00846 /* morph_free.mcaddon in Resources */ = {isa = PBXBuildFile; fileRef = EA4055F52F9E0E2800A00846 /* morph_free.mcaddon */; };
+		EA4055FE2F9E0E2800A00846 /* morph_vip.mcaddon in Resources */ = {isa = PBXBuildFile; fileRef = EA4055F62F9E0E2800A00846 /* morph_vip.mcaddon */; };
+		EA4055FF2F9E0E2800A00846 /* PremiumMorph.mcaddon in Resources */ = {isa = PBXBuildFile; fileRef = EA4055F82F9E0E2800A00846 /* PremiumMorph.mcaddon */; };
+		EA4056002F9E0E2800A00846 /* morphMod.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA4055F92F9E0E2800A00846 /* morphMod.gif */; };
+		EA4056012F9E0E2800A00846 /* premium-mods.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA4055FA2F9E0E2800A00846 /* premium-mods.gif */; };
+		EA4056022F9E0E2800A00846 /* free-mods.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA4055FB2F9E0E2800A00846 /* free-mods.gif */; };
+		EA4056032F9E0E2800A00846 /* FreeMorph.mcaddon in Resources */ = {isa = PBXBuildFile; fileRef = EA4055FC2F9E0E2800A00846 /* FreeMorph.mcaddon */; };
+		EA4056052F9E0E3E00A00846 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056042F9E0E3E00A00846 /* TabBarController.swift */; };
+		EA4056072F9E0E7500A00846 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA4056062F9E0E7500A00846 /* GoogleService-Info.plist */; };
+		EA4056362F9E0E9900A00846 /* SkinsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056092F9E0E9900A00846 /* SkinsVC.xib */; };
+		EA4056372F9E0E9900A00846 /* MorphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40560A2F9E0E9900A00846 /* MorphVC.swift */; };
+		EA4056382F9E0E9900A00846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40560B2F9E0E9900A00846 /* ViewController.swift */; };
+		EA4056392F9E0E9900A00846 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40560C2F9E0E9900A00846 /* StoreVC.swift */; };
+		EA40563A2F9E0E9900A00846 /* ElytraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA40560D2F9E0E9900A00846 /* ElytraVC.xib */; };
+		EA40563B2F9E0E9900A00846 /* HowToUseCapeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40560E2F9E0E9900A00846 /* HowToUseCapeVC.swift */; };
+		EA40563C2F9E0E9900A00846 /* ElytraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40560F2F9E0E9900A00846 /* ElytraVC.swift */; };
+		EA40563D2F9E0E9900A00846 /* MorphDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056102F9E0E9900A00846 /* MorphDetailVC.xib */; };
+		EA40563E2F9E0E9900A00846 /* MorphVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056112F9E0E9900A00846 /* MorphVC.xib */; };
+		EA40563F2F9E0E9900A00846 /* CapesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056122F9E0E9900A00846 /* CapesVC.swift */; };
+		EA4056402F9E0E9900A00846 /* AddonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056132F9E0E9900A00846 /* AddonDetailVC.swift */; };
+		EA4056412F9E0E9900A00846 /* SkinsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056142F9E0E9900A00846 /* SkinsVC.swift */; };
+		EA4056422F9E0E9900A00846 /* StoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056152F9E0E9900A00846 /* StoreVC.xib */; };
+		EA4056432F9E0E9900A00846 /* WebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056162F9E0E9900A00846 /* WebVC.xib */; };
+		EA4056442F9E0E9900A00846 /* StoreVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056172F9E0E9900A00846 /* StoreVC2.xib */; };
+		EA4056452F9E0E9900A00846 /* AddonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056182F9E0E9900A00846 /* AddonsVC.swift */; };
+		EA4056462F9E0E9900A00846 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056192F9E0E9900A00846 /* AlertController.swift */; };
+		EA4056472F9E0E9900A00846 /* MorphModTutorialVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA40561A2F9E0E9900A00846 /* MorphModTutorialVC.xib */; };
+		EA4056482F9E0E9900A00846 /* HowToUseElytra.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA40561B2F9E0E9900A00846 /* HowToUseElytra.xib */; };
+		EA4056492F9E0E9900A00846 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40561C2F9E0E9900A00846 /* WebVC.swift */; };
+		EA40564A2F9E0E9900A00846 /* MorphDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40561D2F9E0E9900A00846 /* MorphDetailVC.swift */; };
+		EA40564B2F9E0E9900A00846 /* HowToUseCapeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA40561E2F9E0E9900A00846 /* HowToUseCapeVC.xib */; };
+		EA40564C2F9E0E9900A00846 /* AddonsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA40561F2F9E0E9900A00846 /* AddonsVC.xib */; };
+		EA40564D2F9E0E9900A00846 /* MoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056202F9E0E9900A00846 /* MoreVC.xib */; };
+		EA40564E2F9E0E9900A00846 /* AddonDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056212F9E0E9900A00846 /* AddonDetailVC.xib */; };
+		EA40564F2F9E0E9900A00846 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056222F9E0E9900A00846 /* MoreVC.swift */; };
+		EA4056502F9E0E9A00A00846 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056232F9E0E9900A00846 /* HomeVC.swift */; };
+		EA4056512F9E0E9A00A00846 /* HowToUseSkinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056242F9E0E9900A00846 /* HowToUseSkinVC.swift */; };
+		EA4056522F9E0E9A00A00846 /* HowToUseElytra.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056252F9E0E9900A00846 /* HowToUseElytra.swift */; };
+		EA4056532F9E0E9A00A00846 /* HowToUseSkinVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056262F9E0E9900A00846 /* HowToUseSkinVC.xib */; };
+		EA4056542F9E0E9A00A00846 /* CapesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056272F9E0E9900A00846 /* CapesVC.xib */; };
+		EA4056552F9E0E9A00A00846 /* StoreVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056282F9E0E9900A00846 /* StoreVC2.swift */; };
+		EA4056562F9E0E9A00A00846 /* MorphModTutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056292F9E0E9900A00846 /* MorphModTutorialVC.swift */; };
+		EA4056572F9E0E9A00A00846 /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40562B2F9E0E9900A00846 /* MoreCell.swift */; };
+		EA4056582F9E0E9A00A00846 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40562C2F9E0E9900A00846 /* HomeCell.swift */; };
+		EA4056592F9E0E9A00A00846 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40562D2F9E0E9900A00846 /* MoreTableViewCell.swift */; };
+		EA40565A2F9E0E9A00A00846 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA40562E2F9E0E9900A00846 /* NativeAdView.xib */; };
+		EA40565B2F9E0E9A00A00846 /* SkinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40562F2F9E0E9900A00846 /* SkinCell.swift */; };
+		EA40565C2F9E0E9A00A00846 /* AddonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4056302F9E0E9900A00846 /* AddonCell.swift */; };
+		EA40565D2F9E0E9A00A00846 /* SkinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056312F9E0E9900A00846 /* SkinCell.xib */; };
+		EA40565E2F9E0E9A00A00846 /* MoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056322F9E0E9900A00846 /* MoreCell.xib */; };
+		EA40565F2F9E0E9A00A00846 /* AddonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056332F9E0E9900A00846 /* AddonCell.xib */; };
+		EA4056602F9E0E9A00A00846 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056342F9E0E9900A00846 /* MoreTableViewCell.xib */; };
+		EA4056612F9E0E9A00A00846 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4056352F9E0E9900A00846 /* HomeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +82,6 @@
 		DE7A13FCC159383CDD0F85E9 /* Pods-MorphingMCPE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorphingMCPE.release.xcconfig"; path = "Target Support Files/Pods-MorphingMCPE/Pods-MorphingMCPE.release.xcconfig"; sourceTree = "<group>"; };
 		EA4055AA2F9E048D00A00846 /* MorphingMCPE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphingMCPE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4055AD2F9E048D00A00846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA4055AF2F9E048D00A00846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA4055B12F9E048D00A00846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA4055B42F9E048D00A00846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA4055B62F9E049000A00846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA4055B92F9E049000A00846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +93,61 @@
 		EA4055E62F9E07D200A00846 /* Skin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
 		EA4055E72F9E07D200A00846 /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		EA4055E82F9E07D200A00846 /* StoreViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		EA4055F02F9E0E1F00A00846 /* 3D */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 3D; sourceTree = "<group>"; };
+		EA4055F12F9E0E1F00A00846 /* cape */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cape; sourceTree = "<group>"; };
+		EA4055F52F9E0E2800A00846 /* morph_free.mcaddon */ = {isa = PBXFileReference; lastKnownFileType = file; path = morph_free.mcaddon; sourceTree = "<group>"; };
+		EA4055F62F9E0E2800A00846 /* morph_vip.mcaddon */ = {isa = PBXFileReference; lastKnownFileType = file; path = morph_vip.mcaddon; sourceTree = "<group>"; };
+		EA4055F82F9E0E2800A00846 /* PremiumMorph.mcaddon */ = {isa = PBXFileReference; lastKnownFileType = file; path = PremiumMorph.mcaddon; sourceTree = "<group>"; };
+		EA4055F92F9E0E2800A00846 /* morphMod.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = morphMod.gif; sourceTree = "<group>"; };
+		EA4055FA2F9E0E2800A00846 /* premium-mods.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "premium-mods.gif"; sourceTree = "<group>"; };
+		EA4055FB2F9E0E2800A00846 /* free-mods.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "free-mods.gif"; sourceTree = "<group>"; };
+		EA4055FC2F9E0E2800A00846 /* FreeMorph.mcaddon */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreeMorph.mcaddon; sourceTree = "<group>"; };
+		EA4056042F9E0E3E00A00846 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EA4056062F9E0E7500A00846 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA4056092F9E0E9900A00846 /* SkinsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkinsVC.xib; sourceTree = "<group>"; };
+		EA40560A2F9E0E9900A00846 /* MorphVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorphVC.swift; sourceTree = "<group>"; };
+		EA40560B2F9E0E9900A00846 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA40560C2F9E0E9900A00846 /* StoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
+		EA40560D2F9E0E9900A00846 /* ElytraVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElytraVC.xib; sourceTree = "<group>"; };
+		EA40560E2F9E0E9900A00846 /* HowToUseCapeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToUseCapeVC.swift; sourceTree = "<group>"; };
+		EA40560F2F9E0E9900A00846 /* ElytraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElytraVC.swift; sourceTree = "<group>"; };
+		EA4056102F9E0E9900A00846 /* MorphDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MorphDetailVC.xib; sourceTree = "<group>"; };
+		EA4056112F9E0E9900A00846 /* MorphVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MorphVC.xib; sourceTree = "<group>"; };
+		EA4056122F9E0E9900A00846 /* CapesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapesVC.swift; sourceTree = "<group>"; };
+		EA4056132F9E0E9900A00846 /* AddonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddonDetailVC.swift; sourceTree = "<group>"; };
+		EA4056142F9E0E9900A00846 /* SkinsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinsVC.swift; sourceTree = "<group>"; };
+		EA4056152F9E0E9900A00846 /* StoreVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreVC.xib; sourceTree = "<group>"; };
+		EA4056162F9E0E9900A00846 /* WebVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebVC.xib; sourceTree = "<group>"; };
+		EA4056172F9E0E9900A00846 /* StoreVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreVC2.xib; sourceTree = "<group>"; };
+		EA4056182F9E0E9900A00846 /* AddonsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddonsVC.swift; sourceTree = "<group>"; };
+		EA4056192F9E0E9900A00846 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		EA40561A2F9E0E9900A00846 /* MorphModTutorialVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MorphModTutorialVC.xib; sourceTree = "<group>"; };
+		EA40561B2F9E0E9900A00846 /* HowToUseElytra.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HowToUseElytra.xib; sourceTree = "<group>"; };
+		EA40561C2F9E0E9900A00846 /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		EA40561D2F9E0E9900A00846 /* MorphDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorphDetailVC.swift; sourceTree = "<group>"; };
+		EA40561E2F9E0E9900A00846 /* HowToUseCapeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HowToUseCapeVC.xib; sourceTree = "<group>"; };
+		EA40561F2F9E0E9900A00846 /* AddonsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddonsVC.xib; sourceTree = "<group>"; };
+		EA4056202F9E0E9900A00846 /* MoreVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreVC.xib; sourceTree = "<group>"; };
+		EA4056212F9E0E9900A00846 /* AddonDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddonDetailVC.xib; sourceTree = "<group>"; };
+		EA4056222F9E0E9900A00846 /* MoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		EA4056232F9E0E9900A00846 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		EA4056242F9E0E9900A00846 /* HowToUseSkinVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToUseSkinVC.swift; sourceTree = "<group>"; };
+		EA4056252F9E0E9900A00846 /* HowToUseElytra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToUseElytra.swift; sourceTree = "<group>"; };
+		EA4056262F9E0E9900A00846 /* HowToUseSkinVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HowToUseSkinVC.xib; sourceTree = "<group>"; };
+		EA4056272F9E0E9900A00846 /* CapesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CapesVC.xib; sourceTree = "<group>"; };
+		EA4056282F9E0E9900A00846 /* StoreVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreVC2.swift; sourceTree = "<group>"; };
+		EA4056292F9E0E9900A00846 /* MorphModTutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorphModTutorialVC.swift; sourceTree = "<group>"; };
+		EA40562B2F9E0E9900A00846 /* MoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
+		EA40562C2F9E0E9900A00846 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		EA40562D2F9E0E9900A00846 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		EA40562E2F9E0E9900A00846 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
+		EA40562F2F9E0E9900A00846 /* SkinCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinCell.swift; sourceTree = "<group>"; };
+		EA4056302F9E0E9900A00846 /* AddonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddonCell.swift; sourceTree = "<group>"; };
+		EA4056312F9E0E9900A00846 /* SkinCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkinCell.xib; sourceTree = "<group>"; };
+		EA4056322F9E0E9900A00846 /* MoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreCell.xib; sourceTree = "<group>"; };
+		EA4056332F9E0E9900A00846 /* AddonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddonCell.xib; sourceTree = "<group>"; };
+		EA4056342F9E0E9900A00846 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
+		EA4056352F9E0E9900A00846 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,14 +200,21 @@
 		EA4055AC2F9E048D00A00846 /* MorphingMCPE */ = {
 			isa = PBXGroup;
 			children = (
+				EA4055F02F9E0E1F00A00846 /* 3D */,
+				EA4055F12F9E0E1F00A00846 /* cape */,
 				EA4055E12F9E07D200A00846 /* Model */,
 				EA4055AD2F9E048D00A00846 /* AppDelegate.swift */,
-				EA4055AF2F9E048D00A00846 /* SceneDelegate.swift */,
-				EA4055B12F9E048D00A00846 /* ViewController.swift */,
 				EA4055B32F9E048D00A00846 /* Main.storyboard */,
 				EA4055B62F9E049000A00846 /* Assets.xcassets */,
 				EA4055B82F9E049000A00846 /* LaunchScreen.storyboard */,
+				EA4055F42F9E0E2800A00846 /* morph */,
+				EA4055F72F9E0E2800A00846 /* MorphModPack */,
 				EA4055BB2F9E049000A00846 /* Info.plist */,
+				EA4056042F9E0E3E00A00846 /* TabBarController.swift */,
+				EA4056082F9E0E9900A00846 /* VC */,
+				EA40562A2F9E0E9900A00846 /* View */,
+				EA4056062F9E0E7500A00846 /* GoogleService-Info.plist */,
+				EA40560B2F9E0E9900A00846 /* ViewController.swift */,
 			);
 			path = MorphingMCPE;
 			sourceTree = "<group>";
@@ -118,6 +231,84 @@
 				EA4055E82F9E07D200A00846 /* StoreViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EA4055F42F9E0E2800A00846 /* morph */ = {
+			isa = PBXGroup;
+			children = (
+				EA4055F52F9E0E2800A00846 /* morph_free.mcaddon */,
+				EA4055F62F9E0E2800A00846 /* morph_vip.mcaddon */,
+			);
+			path = morph;
+			sourceTree = "<group>";
+		};
+		EA4055F72F9E0E2800A00846 /* MorphModPack */ = {
+			isa = PBXGroup;
+			children = (
+				EA4055F82F9E0E2800A00846 /* PremiumMorph.mcaddon */,
+				EA4055F92F9E0E2800A00846 /* morphMod.gif */,
+				EA4055FA2F9E0E2800A00846 /* premium-mods.gif */,
+				EA4055FB2F9E0E2800A00846 /* free-mods.gif */,
+				EA4055FC2F9E0E2800A00846 /* FreeMorph.mcaddon */,
+			);
+			path = MorphModPack;
+			sourceTree = "<group>";
+		};
+		EA4056082F9E0E9900A00846 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EA4056132F9E0E9900A00846 /* AddonDetailVC.swift */,
+				EA4056212F9E0E9900A00846 /* AddonDetailVC.xib */,
+				EA4056182F9E0E9900A00846 /* AddonsVC.swift */,
+				EA40561F2F9E0E9900A00846 /* AddonsVC.xib */,
+				EA4056192F9E0E9900A00846 /* AlertController.swift */,
+				EA4056122F9E0E9900A00846 /* CapesVC.swift */,
+				EA4056272F9E0E9900A00846 /* CapesVC.xib */,
+				EA40560F2F9E0E9900A00846 /* ElytraVC.swift */,
+				EA40560D2F9E0E9900A00846 /* ElytraVC.xib */,
+				EA4056232F9E0E9900A00846 /* HomeVC.swift */,
+				EA40560E2F9E0E9900A00846 /* HowToUseCapeVC.swift */,
+				EA40561E2F9E0E9900A00846 /* HowToUseCapeVC.xib */,
+				EA4056252F9E0E9900A00846 /* HowToUseElytra.swift */,
+				EA40561B2F9E0E9900A00846 /* HowToUseElytra.xib */,
+				EA4056242F9E0E9900A00846 /* HowToUseSkinVC.swift */,
+				EA4056262F9E0E9900A00846 /* HowToUseSkinVC.xib */,
+				EA4056222F9E0E9900A00846 /* MoreVC.swift */,
+				EA4056202F9E0E9900A00846 /* MoreVC.xib */,
+				EA40561D2F9E0E9900A00846 /* MorphDetailVC.swift */,
+				EA4056102F9E0E9900A00846 /* MorphDetailVC.xib */,
+				EA4056292F9E0E9900A00846 /* MorphModTutorialVC.swift */,
+				EA40561A2F9E0E9900A00846 /* MorphModTutorialVC.xib */,
+				EA40560A2F9E0E9900A00846 /* MorphVC.swift */,
+				EA4056112F9E0E9900A00846 /* MorphVC.xib */,
+				EA4056142F9E0E9900A00846 /* SkinsVC.swift */,
+				EA4056092F9E0E9900A00846 /* SkinsVC.xib */,
+				EA40560C2F9E0E9900A00846 /* StoreVC.swift */,
+				EA4056152F9E0E9900A00846 /* StoreVC.xib */,
+				EA4056282F9E0E9900A00846 /* StoreVC2.swift */,
+				EA4056172F9E0E9900A00846 /* StoreVC2.xib */,
+				EA40561C2F9E0E9900A00846 /* WebVC.swift */,
+				EA4056162F9E0E9900A00846 /* WebVC.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EA40562A2F9E0E9900A00846 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA40562B2F9E0E9900A00846 /* MoreCell.swift */,
+				EA40562C2F9E0E9900A00846 /* HomeCell.swift */,
+				EA40562D2F9E0E9900A00846 /* MoreTableViewCell.swift */,
+				EA40562E2F9E0E9900A00846 /* NativeAdView.xib */,
+				EA40562F2F9E0E9900A00846 /* SkinCell.swift */,
+				EA4056302F9E0E9900A00846 /* AddonCell.swift */,
+				EA4056312F9E0E9900A00846 /* SkinCell.xib */,
+				EA4056322F9E0E9900A00846 /* MoreCell.xib */,
+				EA4056332F9E0E9900A00846 /* AddonCell.xib */,
+				EA4056342F9E0E9900A00846 /* MoreTableViewCell.xib */,
+				EA4056352F9E0E9900A00846 /* HomeCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +371,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA40563E2F9E0E9900A00846 /* MorphVC.xib in Resources */,
+				EA4056542F9E0E9A00A00846 /* CapesVC.xib in Resources */,
+				EA4056072F9E0E7500A00846 /* GoogleService-Info.plist in Resources */,
+				EA4056432F9E0E9900A00846 /* WebVC.xib in Resources */,
+				EA40565F2F9E0E9A00A00846 /* AddonCell.xib in Resources */,
+				EA4055F32F9E0E1F00A00846 /* cape in Resources */,
+				EA4056532F9E0E9A00A00846 /* HowToUseSkinVC.xib in Resources */,
+				EA40564E2F9E0E9900A00846 /* AddonDetailVC.xib in Resources */,
+				EA4056032F9E0E2800A00846 /* FreeMorph.mcaddon in Resources */,
+				EA4056602F9E0E9A00A00846 /* MoreTableViewCell.xib in Resources */,
+				EA4056612F9E0E9A00A00846 /* HomeCell.xib in Resources */,
+				EA4056012F9E0E2800A00846 /* premium-mods.gif in Resources */,
+				EA40563D2F9E0E9900A00846 /* MorphDetailVC.xib in Resources */,
 				EA4055BA2F9E049000A00846 /* LaunchScreen.storyboard in Resources */,
+				EA40565A2F9E0E9A00A00846 /* NativeAdView.xib in Resources */,
+				EA4056472F9E0E9900A00846 /* MorphModTutorialVC.xib in Resources */,
+				EA40563A2F9E0E9900A00846 /* ElytraVC.xib in Resources */,
+				EA40565D2F9E0E9A00A00846 /* SkinCell.xib in Resources */,
+				EA4056482F9E0E9900A00846 /* HowToUseElytra.xib in Resources */,
+				EA4055F22F9E0E1F00A00846 /* 3D in Resources */,
+				EA40564B2F9E0E9900A00846 /* HowToUseCapeVC.xib in Resources */,
+				EA4055FD2F9E0E2800A00846 /* morph_free.mcaddon in Resources */,
 				EA4055B72F9E049000A00846 /* Assets.xcassets in Resources */,
+				EA40564D2F9E0E9900A00846 /* MoreVC.xib in Resources */,
+				EA40564C2F9E0E9900A00846 /* AddonsVC.xib in Resources */,
+				EA4055FF2F9E0E2800A00846 /* PremiumMorph.mcaddon in Resources */,
+				EA4056442F9E0E9900A00846 /* StoreVC2.xib in Resources */,
+				EA4056422F9E0E9900A00846 /* StoreVC.xib in Resources */,
+				EA4056022F9E0E2800A00846 /* free-mods.gif in Resources */,
 				EA4055B52F9E048D00A00846 /* Main.storyboard in Resources */,
+				EA4056362F9E0E9900A00846 /* SkinsVC.xib in Resources */,
+				EA40565E2F9E0E9A00A00846 /* MoreCell.xib in Resources */,
+				EA4056002F9E0E2800A00846 /* morphMod.gif in Resources */,
+				EA4055FE2F9E0E2800A00846 /* morph_vip.mcaddon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,16 +457,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4056572F9E0E9A00A00846 /* MoreCell.swift in Sources */,
+				EA4056402F9E0E9900A00846 /* AddonDetailVC.swift in Sources */,
 				EA4055EC2F9E07D200A00846 /* WebUtility.swift in Sources */,
 				EA4055EB2F9E07D200A00846 /* MorphModViewModel.swift in Sources */,
+				EA4056562F9E0E9A00A00846 /* MorphModTutorialVC.swift in Sources */,
+				EA40564F2F9E0E9900A00846 /* MoreVC.swift in Sources */,
 				EA4055EE2F9E07D200A00846 /* AppViewModel.swift in Sources */,
+				EA4056052F9E0E3E00A00846 /* TabBarController.swift in Sources */,
+				EA4056522F9E0E9A00A00846 /* HowToUseElytra.swift in Sources */,
+				EA4056382F9E0E9900A00846 /* ViewController.swift in Sources */,
+				EA40564A2F9E0E9900A00846 /* MorphDetailVC.swift in Sources */,
+				EA40563B2F9E0E9900A00846 /* HowToUseCapeVC.swift in Sources */,
 				EA4055ED2F9E07D200A00846 /* Skin.swift in Sources */,
+				EA4056412F9E0E9900A00846 /* SkinsVC.swift in Sources */,
+				EA4056512F9E0E9A00A00846 /* HowToUseSkinVC.swift in Sources */,
+				EA4056462F9E0E9900A00846 /* AlertController.swift in Sources */,
+				EA40565C2F9E0E9A00A00846 /* AddonCell.swift in Sources */,
+				EA4056592F9E0E9A00A00846 /* MoreTableViewCell.swift in Sources */,
+				EA40565B2F9E0E9A00A00846 /* SkinCell.swift in Sources */,
+				EA4056392F9E0E9900A00846 /* StoreVC.swift in Sources */,
+				EA4056502F9E0E9A00A00846 /* HomeVC.swift in Sources */,
 				EA4055E92F9E07D200A00846 /* Addon.swift in Sources */,
-				EA4055B22F9E048D00A00846 /* ViewController.swift in Sources */,
 				EA4055AE2F9E048D00A00846 /* AppDelegate.swift in Sources */,
-				EA4055B02F9E048D00A00846 /* SceneDelegate.swift in Sources */,
 				EA4055EF2F9E07D200A00846 /* StoreViewModel.swift in Sources */,
+				EA4056452F9E0E9900A00846 /* AddonsVC.swift in Sources */,
+				EA40563F2F9E0E9900A00846 /* CapesVC.swift in Sources */,
 				EA4055EA2F9E07D200A00846 /* FileHelper.swift in Sources */,
+				EA4056492F9E0E9900A00846 /* WebVC.swift in Sources */,
+				EA4056582F9E0E9A00A00846 /* HomeCell.swift in Sources */,
+				EA4056372F9E0E9900A00846 /* MorphVC.swift in Sources */,
+				EA40563C2F9E0E9900A00846 /* ElytraVC.swift in Sources */,
+				EA4056552F9E0E9A00A00846 /* StoreVC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

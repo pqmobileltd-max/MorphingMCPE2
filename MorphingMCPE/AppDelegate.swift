@@ -1,36 +1,116 @@
 //
 //  AppDelegate.swift
-//  MorphingMCPE
+//  MorphMCPE
 //
-//  Created by tony on 26/04/2026.
+//  Created by son on 6/1/22.
 //
 
 import UIKit
+import SwiftyStoreKit
+//import GoogleMobileAds
+//import UnityAds
+import FirebaseCore
+import FirebaseAppCheck
+
+class AppAttestProviderFactory: NSObject, AppCheckProviderFactory {
+    func createProvider(with app: FirebaseApp) -> AppCheckProvider? {
+        return AppAttestProvider(app: app)
+    }
+}
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        setupNavigationBarAppearance()
+#if DEBUG
+        let providerFactory = AppCheckDebugProviderFactory()
+        AppCheck.setAppCheckProviderFactory(providerFactory)
+#else
+        let providerFactory = AppAttestProviderFactory()//AppCheckDebugProviderFactory()//AppAttestProviderFactory()
+        AppCheck.setAppCheckProviderFactory(providerFactory)
+#endif
+        
+        
+        FirebaseApp.configure()
+        
+//        let ads = GADMobileAds.sharedInstance()
+//            ads.start { status in
+//              // Optional: Log each adapter's initialization latency.
+//              let adapterStatuses = status.adapterStatusesByClassName
+//              for adapter in adapterStatuses {
+//                let adapterStatus = adapter.value
+//                NSLog("Adapter Name: %@, Description: %@, Latency: %f", adapter.key,
+//                adapterStatus.description, adapterStatus.latency)
+//              }
+//
+//              // Start loading ads here...
+//                let gdprMetaData = UADSMetaData()
+//                gdprMetaData.set("gdpr.consent", value: true)
+//                gdprMetaData.commit()
+//                
+//                let ccpaMetaData = UADSMetaData()
+//                ccpaMetaData.set("privacy.consent", value: true)
+//                ccpaMetaData.commit()
+//            }
+        
+        
+        initStore()
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        ViewController.requestIDFA()
     }
 
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    func initStore(){
+        
+        func check(){
+            let vm = AppStore()
+            DispatchQueue.global().async {
+                vm.checkHoaDon(LIFETIME) {_ in }
+            }
+            
+            DispatchQueue.global().async {
+                vm.checkSubscription(MONTHLY, forceRefresh: true) { _ in}
+            }
+        }
+        
+        
+        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
+            for purchase in purchases {
+                switch purchase.transaction.transactionState {
+                case .purchased, .restored:
+                    check()
+                    if purchase.needsFinishTransaction {
+                        // Deliver content from server, then:
+                        SwiftyStoreKit.finishTransaction(purchase.transaction)
+                    }
+                    // Unlock content
+                case .failed, .purchasing, .deferred:
+                    break // do nothing
+                default:
+                    break
+                }
+            }
+        }
+        
     }
-
+    
+    func setupNavigationBarAppearance() {
+        let appearance = UINavigationBar.appearance()
+        
+        appearance.tintColor = .white // Bar button items
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white] // Title color
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white] // Large title color
+        
+        // Optional: Set background color or make it translucent
+        appearance.barTintColor = .clear // Example background
+        appearance.isTranslucent = true
+    }
 
 }
 
