@@ -76,6 +76,7 @@ class AddonDetailVC: ViewController,UIScrollViewDelegate,WKNavigationDelegate {
     }
     
     @objc func downloadBtnPress(){
+        needWatchAd = false
         if addon.modType == "PREMIUM"{
             if AppStore.shared.isUnlockPremium(){
                 downloadAddon()
@@ -89,8 +90,8 @@ class AddonDetailVC: ViewController,UIScrollViewDelegate,WKNavigationDelegate {
                 downloadAddon()
             }else{
 //                showRewardedAd {
-                    self.needWatchAd = false
-                }
+//                    self.needWatchAd = false
+//                }
             }
         }
     }
