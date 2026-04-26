@@ -24,6 +24,7 @@ post_install do |installer|
     target.build_configurations.each do |config|
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
 #      config.build_settings['HEADER_SEARCH_PATHS'] = '$(inherited) $(SDKROOT)/usr/include/libxml2'
+      config.build_settings['HEADER_SEARCH_PATHS'] = '$(inherited) $(SDKROOT)/usr/include/libxmlKanna'
     end
   end
 end
