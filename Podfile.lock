@@ -52,7 +52,7 @@ DEPENDENCIES:
   - FirebaseAppCheck (= 10.15.0)
   - FirebaseCore (~> 10.15)
   - FirebaseFunctions (= 10.15.0)
-  - Kanna (~> 4.0.0)
+  - Kanna
   - MBProgressHUD
   - SDWebImage
   - SwiftyJSON
@@ -104,6 +104,6 @@ SPEC CHECKSUMS:
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
   ZIPFoundation: dfd3d681c4053ff7e2f7350bc4e53b5dba3f5351
 
-PODFILE CHECKSUM: bb9488ab5019ca08e88d6c23429dc0669ecd9a62
+PODFILE CHECKSUM: 6cfd0d1385e45fefebbf94e286fc56bbd1c08229
 
 COCOAPODS: 1.16.2
