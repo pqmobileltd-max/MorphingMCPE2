@@ -58,7 +58,7 @@ class MorphVC: ViewController {
         }
 
         let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil)!
-        let adView = nibObjects.first as! GADNativeAdView
+//        let adView = nibObjects.first as! GADNativeAdView
         
 //        self.setAdView(adView)
     }
@@ -97,7 +97,9 @@ class MorphVC: ViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        scrollViewHeight.constant = nativeAdHolderView.frame.origin.y + nativeAdHolderView.frame.height + ViewController.bannerView.frame.height + 100
+//        scrollViewHeight.constant = nativeAdHolderView.frame.origin.y + nativeAdHolderView.frame.height + ViewController.bannerView.frame.height + 100
+        
+        scrollViewHeight.constant = nativeAdHolderView.frame.origin.y + nativeAdHolderView.frame.height +  100
         
     }
 

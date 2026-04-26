@@ -49,11 +49,11 @@ class SkinsVC: ViewController,WKNavigationDelegate {
         
         SKStoreReviewController.requestReview()
         
-        if AppStore.shared.isUnlockPremium(){
-            bottomConstraint.constant = 0
-        }else{
-            bottomConstraint.constant = ViewController.bannerView.frame.height
-        }
+//        if AppStore.shared.isUnlockPremium(){
+//            bottomConstraint.constant = 0
+//        }else{
+//            bottomConstraint.constant = ViewController.bannerView.frame.height
+//        }
         
         
         if isInit3DView == false{

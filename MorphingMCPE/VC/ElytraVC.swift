@@ -57,11 +57,11 @@ class ElytraVC: ViewController,WKNavigationDelegate {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if AppStore.shared.isUnlockPremium(){
-            bottomConstraint.constant = 0
-        }else{
-            bottomConstraint.constant = ViewController.bannerView.frame.height
-        }
+//        if AppStore.shared.isUnlockPremium(){
+//            bottomConstraint.constant = 0
+//        }else{
+//            bottomConstraint.constant = ViewController.bannerView.frame.height
+//        }
     }
     
 //    override func viewDidAppear(_ animated: Bool) {

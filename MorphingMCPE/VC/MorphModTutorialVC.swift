@@ -39,7 +39,7 @@ class MorphModTutorialVC: ViewController,WKNavigationDelegate,WKUIDelegate {
         self.navigationItem.rightBarButtonItem = closebtn
         
         let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil)!
-        let adView = nibObjects.first as! GADNativeAdView
+//        let adView = nibObjects.first as! GADNativeAdView
         
 //        self.setAdView(adView)
     }
@@ -147,7 +147,9 @@ class MorphModTutorialVC: ViewController,WKNavigationDelegate,WKUIDelegate {
                     
                     self.webView.frame = frame
                     self.webView.backgroundColor = .clear
-                    self.heightConstraint.constant = self.ytView.frame.origin.y + self.ytView.frame.height + self.webView.frame.origin.y + self.webView.frame.size.height  + ViewController.bannerView.frame.height + 150
+//                    self.heightConstraint.constant = self.ytView.frame.origin.y + self.ytView.frame.height + self.webView.frame.origin.y + self.webView.frame.size.height  + ViewController.bannerView.frame.height + 150
+                    
+                    self.heightConstraint.constant = self.ytView.frame.origin.y + self.ytView.frame.height + self.webView.frame.origin.y + self.webView.frame.size.height  +  150
                     
                 })
             }

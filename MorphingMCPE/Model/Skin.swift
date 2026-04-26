@@ -23,23 +23,25 @@ class Skin{
 
     func downloadSkin(_ path : String,completion : @escaping (UIImage?) -> ()){
         
-        WebUtility.getSource(path) { src in
-            if let doc = try? Kanna.HTML(html: src, encoding: .utf8){
-                let item = doc.css("form[method=POST] a")[0]
-                let link = item["href"]
-                
-                WebUtility.downloadSkin(link!) { (image) in
-                    if let skin = image{
-                        self.skin = skin
-                        completion(self.skin)
-                    }else{
-                        completion(nil)
-                    }
-                }
-            }else{
-                completion(nil)
-            }
-        }
+        completion(nil)
+        
+//        WebUtility.getSource(path) { src in
+//            if let doc = try? Kanna.HTML(html: src, encoding: .utf8){
+//                let item = doc.css("form[method=POST] a")[0]
+//                let link = item["href"]
+//                
+//                WebUtility.downloadSkin(link!) { (image) in
+//                    if let skin = image{
+//                        self.skin = skin
+//                        completion(self.skin)
+//                    }else{
+//                        completion(nil)
+//                    }
+//                }
+//            }else{
+//                completion(nil)
+//            }
+//        }
     }
     
     func downloadThumb(_ path : String,completion : @escaping (UIImage?) -> ()){

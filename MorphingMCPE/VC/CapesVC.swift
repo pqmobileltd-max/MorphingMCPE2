@@ -47,11 +47,11 @@ class CapesVC: ViewController,WKNavigationDelegate {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if AppStore.shared.isUnlockPremium(){
-            bottomConstraint.constant = 0
-        }else{
-            bottomConstraint.constant = ViewController.bannerView.frame.height
-        }
+//        if AppStore.shared.isUnlockPremium(){
+//            bottomConstraint.constant = 0
+//        }else{
+//            bottomConstraint.constant = ViewController.bannerView.frame.height
+//        }
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
