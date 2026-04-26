@@ -88,7 +88,7 @@ class AddonDetailVC: ViewController,UIScrollViewDelegate,WKNavigationDelegate {
             if needWatchAd == false{
                 downloadAddon()
             }else{
-                showRewardedAd {
+//                showRewardedAd {
                     self.needWatchAd = false
                 }
             }

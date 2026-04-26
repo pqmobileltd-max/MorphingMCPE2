@@ -41,8 +41,10 @@ PODS:
   - SDWebImage (5.21.7):
     - SDWebImage/Core (= 5.21.7)
   - SDWebImage/Core (5.21.7)
+  - SwiftyGif (5.4.5)
   - SwiftyJSON (5.0.2)
   - SwiftyStoreKit (0.16.1)
+  - youtube-ios-player-helper (1.0.4)
   - ZIPFoundation (0.9.20)
 
 DEPENDENCIES:
@@ -53,8 +55,10 @@ DEPENDENCIES:
   - FirebaseFunctions (= 10.15.0)
   - MBProgressHUD
   - SDWebImage
+  - SwiftyGif
   - SwiftyJSON
   - SwiftyStoreKit
+  - youtube-ios-player-helper
   - ZIPFoundation
 
 SPEC REPOS:
@@ -75,8 +79,10 @@ SPEC REPOS:
     - MBProgressHUD
     - PromisesObjC
     - SDWebImage
+    - SwiftyGif
     - SwiftyJSON
     - SwiftyStoreKit
+    - youtube-ios-player-helper
     - ZIPFoundation
 
 SPEC CHECKSUMS:
@@ -96,10 +102,12 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   SDWebImage: e9fc87c1aab89a8ab1bbd74eba378c6f53be8abf
+  SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
   SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
   ZIPFoundation: dfd3d681c4053ff7e2f7350bc4e53b5dba3f5351
 
-PODFILE CHECKSUM: 10c729f992987bd0c13f5bb284e544c808ffebb5
+PODFILE CHECKSUM: 2ba768415957bc4fb92a858677cd748f27ba2295
 
 COCOAPODS: 1.16.2

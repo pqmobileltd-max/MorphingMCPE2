@@ -168,15 +168,17 @@ extension ElytraVC : UICollectionViewDelegate,UICollectionViewDataSource,UIColle
         cell.skinImageView.contentMode = .scaleAspectFit
         cell.skinImageView.image = UIImage(named: "\(icon_prefix)\(thumb)")
         
-        if indexPath.row % 10 == 1{
-            cell.watchAdView.isHidden = false
-        }else{
-            cell.watchAdView.isHidden = true
-        }
+        cell.watchAdView.isHidden = true
         
-        if AppStore.shared.isUnlockPremium(){
-            cell.watchAdView.isHidden = true
-        }
+//        if indexPath.row % 10 == 1{
+//            cell.watchAdView.isHidden = false
+//        }else{
+//            cell.watchAdView.isHidden = true
+//        }
+//        
+//        if AppStore.shared.isUnlockPremium(){
+//            cell.watchAdView.isHidden = true
+//        }
         return cell
     }
     
@@ -196,19 +198,21 @@ extension ElytraVC : UICollectionViewDelegate,UICollectionViewDataSource,UIColle
             viewElytrIn3D(cape!)
         }
         
-        if AppStore.shared.isUnlockPremium(){
-            view3D()
-            return
-        }
+        view3D()
         
-        if indexPath.row % 10 == 1{
-            showRewardedAd {
-                view3D()
-            }
-        }else{
-            showInterstitialAds()
-            view3D()
-        }
+//        if AppStore.shared.isUnlockPremium(){
+//            view3D()
+//            return
+//        }
+//        
+//        if indexPath.row % 10 == 1{
+//            showRewardedAd {
+//                view3D()
+//            }
+//        }else{
+//            showInterstitialAds()
+//            view3D()
+//        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

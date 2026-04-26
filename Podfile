@@ -18,6 +18,8 @@ pod 'FirebaseAppCheck', '10.15.0'
   pod 'AlamofireImage'
   pod 'SDWebImage'
   pod 'ZIPFoundation'
+  pod 'SwiftyGif'
+  pod "youtube-ios-player-helper"
 end
 post_install do |installer|
   installer.pods_project.targets.each do |target|

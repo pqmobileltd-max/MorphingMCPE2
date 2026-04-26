@@ -10,7 +10,7 @@ import MBProgressHUD
 import WebKit
 import SDWebImage
 import StoreKit
-import GoogleMobileAds
+//import GoogleMobileAds
 
 class SkinsVC: ViewController,WKNavigationDelegate {
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
@@ -182,15 +182,17 @@ extension SkinsVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollec
         
         cell.skinImageView.sd_setImage(with: URL(string: skin.iconSkinURL), completed: nil)
         
-        if indexPath.row % 6 == 1{
-            cell.watchAdView.isHidden = false
-        }else{
-            cell.watchAdView.isHidden = true
-        }
+//        if indexPath.row % 6 == 1{
+//            cell.watchAdView.isHidden = false
+//        }else{
+//            cell.watchAdView.isHidden = true
+//        }
+//        
+//        if AppStore.shared.isUnlockPremium(){
+//            cell.watchAdView.isHidden = true
+//        }
         
-        if AppStore.shared.isUnlockPremium(){
-            cell.watchAdView.isHidden = true
-        }
+        cell.watchAdView.isHidden = true
         
         return cell
     }
@@ -221,25 +223,27 @@ extension SkinsVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollec
             }
         }
         
-        if AppStore.shared.isUnlockPremium(){
-            viewSkin()
-            return
-        }
+        viewSkin()
         
-        if indexPath.row % 6 == 1{
-            self.showRewardedAd {
-                viewSkin()
-            }
-        }else{
-            showInterstitialAds()
-            viewSkin()
-        }
+//        if AppStore.shared.isUnlockPremium(){
+//            viewSkin()
+//            return
+//        }
+//        
+//        if indexPath.row % 6 == 1{
+//            self.showRewardedAd {
+//                viewSkin()
+//            }
+//        }else{
+//            showInterstitialAds()
+//            viewSkin()
+//        }
         
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row == collectionView.numberOfItems(inSection: indexPath.section) - 1 {
-            showInterstitialAds()
+//            showInterstitialAds()
             fetchSkinData()
         }
     }
