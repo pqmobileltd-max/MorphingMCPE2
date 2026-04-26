@@ -14,6 +14,13 @@
 		EA4055B52F9E048D00A00846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4055B32F9E048D00A00846 /* Main.storyboard */; };
 		EA4055B72F9E049000A00846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4055B62F9E049000A00846 /* Assets.xcassets */; };
 		EA4055BA2F9E049000A00846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4055B82F9E049000A00846 /* LaunchScreen.storyboard */; };
+		EA4055E92F9E07D200A00846 /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E22F9E07D200A00846 /* Addon.swift */; };
+		EA4055EA2F9E07D200A00846 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E32F9E07D200A00846 /* FileHelper.swift */; };
+		EA4055EB2F9E07D200A00846 /* MorphModViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E42F9E07D200A00846 /* MorphModViewModel.swift */; };
+		EA4055EC2F9E07D200A00846 /* WebUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E52F9E07D200A00846 /* WebUtility.swift */; };
+		EA4055ED2F9E07D200A00846 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E62F9E07D200A00846 /* Skin.swift */; };
+		EA4055EE2F9E07D200A00846 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E72F9E07D200A00846 /* AppViewModel.swift */; };
+		EA4055EF2F9E07D200A00846 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4055E82F9E07D200A00846 /* StoreViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		EA4055B62F9E049000A00846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA4055B92F9E049000A00846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA4055BB2F9E049000A00846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA4055E22F9E07D200A00846 /* Addon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addon.swift; sourceTree = "<group>"; };
+		EA4055E32F9E07D200A00846 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		EA4055E42F9E07D200A00846 /* MorphModViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorphModViewModel.swift; sourceTree = "<group>"; };
+		EA4055E52F9E07D200A00846 /* WebUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebUtility.swift; sourceTree = "<group>"; };
+		EA4055E62F9E07D200A00846 /* Skin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
+		EA4055E72F9E07D200A00846 /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		EA4055E82F9E07D200A00846 /* StoreViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,7 @@
 		EA4055AC2F9E048D00A00846 /* MorphingMCPE */ = {
 			isa = PBXGroup;
 			children = (
+				EA4055E12F9E07D200A00846 /* Model */,
 				EA4055AD2F9E048D00A00846 /* AppDelegate.swift */,
 				EA4055AF2F9E048D00A00846 /* SceneDelegate.swift */,
 				EA4055B12F9E048D00A00846 /* ViewController.swift */,
@@ -89,6 +104,20 @@
 				EA4055BB2F9E049000A00846 /* Info.plist */,
 			);
 			path = MorphingMCPE;
+			sourceTree = "<group>";
+		};
+		EA4055E12F9E07D200A00846 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA4055E22F9E07D200A00846 /* Addon.swift */,
+				EA4055E32F9E07D200A00846 /* FileHelper.swift */,
+				EA4055E42F9E07D200A00846 /* MorphModViewModel.swift */,
+				EA4055E52F9E07D200A00846 /* WebUtility.swift */,
+				EA4055E62F9E07D200A00846 /* Skin.swift */,
+				EA4055E72F9E07D200A00846 /* AppViewModel.swift */,
+				EA4055E82F9E07D200A00846 /* StoreViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +235,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4055EC2F9E07D200A00846 /* WebUtility.swift in Sources */,
+				EA4055EB2F9E07D200A00846 /* MorphModViewModel.swift in Sources */,
+				EA4055EE2F9E07D200A00846 /* AppViewModel.swift in Sources */,
+				EA4055ED2F9E07D200A00846 /* Skin.swift in Sources */,
+				EA4055E92F9E07D200A00846 /* Addon.swift in Sources */,
 				EA4055B22F9E048D00A00846 /* ViewController.swift in Sources */,
 				EA4055AE2F9E048D00A00846 /* AppDelegate.swift in Sources */,
 				EA4055B02F9E048D00A00846 /* SceneDelegate.swift in Sources */,
+				EA4055EF2F9E07D200A00846 /* StoreViewModel.swift in Sources */,
+				EA4055EA2F9E07D200A00846 /* FileHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
